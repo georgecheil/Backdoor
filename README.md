@@ -102,7 +102,48 @@ Same implementation with `server.py`.
 Adjustments have been made to ensure multiple client connections at once.
 
 
+## For keylogger.py
+
+This Python script implements a basic keylogger that captures keystrokes and writes them to a log file. 
+The keylogger operates in the background, using the pynput library to monitor key presses. 
+Additionally, the script provides functionality for reading the logs, writing keystrokes to a file, and self-destructing to maintain stealth.
+
+### Features:
+
+1. **Keylogging:**
+   - Captures keystrokes, including Backspace, Enter, Shift, Space, Caps Lock, and regular alphanumeric keys.
+
+2. **Log Storage:**
+   - Saves the captured keystrokes to a log file located in the 'appdata' directory with the filename 'processmanager.txt'.
+
+3. **Self-Destruct Functionality:**
+   - Provides the ability to trigger self-destruction, removing the log file and stopping the keylogger.
+
+### Usage:
+
+1. **Keylogger Initialization:**
+   - Create an instance of the `Keylogger` class: `keylog = Keylogger()`.
+
+2. **Threaded Execution:**
+   - Start the keylogger in a separate thread to run in the background: `t = threading.Thread(target=keylog.start)`.
+   - Execute the thread: `t.start()`.
+
+3. **Log Retrieval:**
+   - Periodically retrieve and print the captured keystrokes from the log file: `logs = keylog.read_logs()`.
+
+4. **Self-Destruct:**
+   - Trigger self-destruction when needed: `keylog.self_destruct()`.
+
+### Notes:
+
+- The log file is stored in the 'appdata' directory with the filename 'processmanager.txt'. Update the `path` variable in the script if necessary.
+- The keylogger operates in the background and captures keystrokes globally. Ensure that you have appropriate permissions to run such scripts on the target machine.
+
 
 ### Disclaimer:
 
-This tool is for educational purposes only. Misuse of this tool for unauthorized access to computer systems is illegal and strictly prohibited. The author is not responsible for any damages or legal consequences arising from the use of this tool.
+This tool is for educational purposes only. 
+Misuse of this tool for unauthorized access to computer systems is illegal and strictly prohibited. 
+The author is not responsible for any damages or legal consequences arising from the use of this tool.
+Use it responsibly and only on systems for which you have explicit permission.
+
