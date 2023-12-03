@@ -53,6 +53,7 @@ This Python script implements a basic remote shell for controlling a target mach
 It allows the user to execute commands on the target machine, upload and download files, take screenshots, and manage a keylogger. 
 The tool operates on a client-server model and assumes a trusted network environment.
 
+
 ### Features:
 
 1. **Command Execution:**
@@ -92,6 +93,11 @@ The tool operates on a client-server model and assumes a trusted network environ
 - Ensure that you have the necessary permissions to run scripts and execute commands on the target machine.
 - Use this tool responsibly and only on systems you have explicit permission to access.
 
+
+## For commandandcontrol.py
+
+Same implementation with `server.py`.
+Adjustments have been made to ensure multiple client connections at once.
 
 
 ### Disclaimer:
