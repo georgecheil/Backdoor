@@ -105,7 +105,9 @@ Adjustments have been made to ensure multiple client connections at once.
 ## For keylogger.py
 
 This Python script implements a basic keylogger that captures keystrokes and writes them to a log file. 
+
 The keylogger operates in the background, using the pynput library to monitor key presses.
+
 Additionally, the script provides functionality for reading the logs, writing keystrokes to a file, and self-destructing to maintain stealth.
 
 ### Features:
