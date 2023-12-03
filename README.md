@@ -47,7 +47,7 @@ The script uses a basic client-server model with a persistent connection.
 
 
 
-##For server.py
+## For server.py
 
 This Python script implements a basic remote shell for controlling a target machine from a remote location. 
 It allows the user to execute commands on the target machine, upload and download files, take screenshots, and manage a keylogger. 
