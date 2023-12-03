@@ -98,6 +98,7 @@ The tool operates on a client-server model and assumes a trusted network environ
 ## For commandandcontrol.py
 
 Same implementation with `server.py`.
+
 Adjustments have been made to ensure multiple client connections at once.
 
 
